@@ -230,7 +230,9 @@ plt.show()
 
 print('PSD:' + str(psd(eeg[:128])))
 
-# %%
+# %% 
+# This code uses logisticregression to derive and indicative value that
+# can be used as proxy of each signal segment.
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import log_loss
 import numpy as np

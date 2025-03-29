@@ -48,7 +48,8 @@ def unpickle_keypoints(array):
     return keypoints, np.array(descriptors)
 
 # Instruye a OpenCV a que acceda a la primer cámara disponible.
-cap = cv2.VideoCapture(0)
+# Mac OS X Sonoma allows to have the camera 0 as the iPhone camera.  So the Macbook Camera sometimes is 1.
+cap = cv2.VideoCapture(1)
 
 
 print ("Connecting..")

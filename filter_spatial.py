@@ -74,6 +74,7 @@ plt.title('Observation 3')
 plt.subplot(3,1,3)
 plt.plot(X[:,2], color='orange')
 
+# ARRANCA LA PELICULA QUE IMPORTA  ------------------------------
 
 # From this point, we would like to do the opposite and recover the original sources, undoing the mixing process.
 ica = FastICA(n_components=3)
